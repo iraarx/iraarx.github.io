@@ -9040,8 +9040,7 @@ a.header-menu__link {
 }
 
 .header-menu__item {
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 0px;
 }
 
 .header-menu__item:after {
@@ -9075,7 +9074,7 @@ a.header-menu__link {
   content: '120';
 }
 
-.header-menu__link:hover:before {
+.header-menu__item:hover:before {
   content: '';
   content: '';
   display: block;
@@ -9090,15 +9089,13 @@ a.header-menu__link {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   z-index: 11;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .header-menu__dropdown-wrap {
   display: none;
   position: absolute;
   left: 0;
-  top: 75px;
+  top: 85px;
   width: 100%;
   padding: 30px 30px 50px 30px;
   background: #fff;
@@ -9286,7 +9283,7 @@ a.header-menu__link {
 .btn--bordered:hover, .btn--bordered-header:hover, .btn--bordered-fullwidth:hover {
   background-color: #ef7c00;
   color: #000;
-  border: none;
+  border-color: #000;
 }
 
 .btn--bordered-header {
@@ -9310,7 +9307,7 @@ a.header-menu__link {
 .btn--filled:hover {
   background-color: #ef7c00;
   color: #000;
-  border: none;
+  border-color: #000;
 }
 
 .main-slider__wrapper {
@@ -9433,8 +9430,29 @@ a.header-menu__link {
   text-align: center;
 }
 
-.gallery-products__img, .sales-product__img {
+.gallery-products__img, .gallery-sales__img {
   width: 100%;
+}
+
+.gallery-products__item, .gallery-sales__item {
+  margin-bottom: 30px;
+}
+
+.gallery-products__img, .gallery-sales__img {
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-products__figcaption, .gallery-sales__figcaption {
+  position: absolute;
+  bottom: 2%;
+  z-index: 2;
+  padding: 8% 10% 10% 10%;
+}
+
+.gallery-products__more-btn {
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .look-book-banner__img, .sales-banner__img, .banner-sunglasses__img, .banner-summer-collection__img, .banner-new-arrivals__img, .banner-men-shoes__img, .banner-super-discount__img {
