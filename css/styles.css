@@ -17,6 +17,7 @@
  * IE10+ doesn't honor `<meta name="viewport">` in some cases
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
 @-ms-viewport {
   width: device-width;
 }
@@ -9009,14 +9010,39 @@ a.header-menu__link {
 .gallery-products__figcaption .gallery-products__title {
   text-transform: uppercase;
   color: #444444;
+  line-height: 20px;
 }
 
 .gallery-products__figcaption .gallery-products__price, .gallery-products__figcaption .gallery-products__discount {
   color: #7d7d7d;
+  margin-top: 10px;
 }
 
 .gallery-products__figcaption .gallery-products__discount {
   text-decoration: line-through;
+}
+
+.section-title {
+  margin-top: 12vh;
+  margin-bottom: 8vh;
+}
+
+.section-title__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-title__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .header__nav {
@@ -9278,6 +9304,7 @@ a.header-menu__link {
   width: auto;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
+  text-align: center;
 }
 
 .btn--bordered:hover, .btn--bordered-header:hover, .btn--bordered-fullwidth:hover {
@@ -9291,6 +9318,7 @@ a.header-menu__link {
 }
 
 .btn--bordered-fullwidth {
+  display: block;
   width: 100%;
 }
 
@@ -9445,22 +9473,110 @@ a.header-menu__link {
 
 .gallery-products__figcaption, .gallery-sales__figcaption {
   position: absolute;
-  bottom: 2%;
+  bottom: 0;
   z-index: 2;
   padding: 8% 10% 10% 10%;
 }
 
 .gallery-products__more-btn {
   margin-top: 20px;
-  margin-bottom: 100px;
 }
 
-.look-book-banner__img, .sales-banner__img, .banner-sunglasses__img, .banner-summer-collection__img, .banner-new-arrivals__img, .banner-men-shoes__img, .banner-super-discount__img {
+.w100 {
+  width: 100%;
+}
+
+.sales-banner__img, .banner-sunglasses__img, .banner-summer-collection__img, .banner-new-arrivals__img, .banner-men-shoes__img, .banner-super-discount__img {
   width: 100%;
 }
 
 .look-book-banner {
   background-color: #e7e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15vh;
+}
+
+.look-book-banner__img-wrap {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.look-book-banner__figure {
+  width: 80%;
+  height: auto;
+}
+
+.look-book-banner__img {
+  width: 100%;
+}
+
+.look-book-banner__caption-wrap {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.look-book-banner__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.look-book-banner__top-text, .look-book-banner__bottom-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.look-book-banner__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 70px;
+  line-height: 80px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.look-book-banner__bottom-text {
+  text-transform: lowercase;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .icon {
