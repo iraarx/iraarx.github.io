@@ -9003,25 +9003,6 @@ a:hover {
   color: #ef7c00;
 }
 
-a.header-menu__link {
-  text-transform: uppercase;
-}
-
-.gallery-products__figcaption .gallery-products__title {
-  text-transform: uppercase;
-  color: #444444;
-  line-height: 20px;
-}
-
-.gallery-products__figcaption .gallery-products__price, .gallery-products__figcaption .gallery-products__discount {
-  color: #7d7d7d;
-  margin-top: 10px;
-}
-
-.gallery-products__figcaption .gallery-products__discount {
-  text-decoration: line-through;
-}
-
 .section-title {
   margin-top: 12vh;
   margin-bottom: 8vh;
@@ -9115,6 +9096,10 @@ a.header-menu__link {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   z-index: 11;
+}
+
+.header-menu__link {
+  text-transform: uppercase;
 }
 
 .header-menu__dropdown-wrap {
@@ -9478,12 +9463,23 @@ a.header-menu__link {
   padding: 8% 10% 10% 10%;
 }
 
-.gallery-products__more-btn {
-  margin-top: 20px;
+.gallery-products__title, .gallery-sales__title {
+  text-transform: uppercase;
+  color: #444444;
+  line-height: 20px;
 }
 
-.w100 {
-  width: 100%;
+.gallery-products__price, .gallery-products__discount, .gallery-sales__price, .gallery-sales__discount {
+  color: #7d7d7d;
+  margin-top: 10px;
+}
+
+.gallery-products__discount, .gallery-sales__discount {
+  text-decoration: line-through;
+}
+
+.gallery-products__more-btn {
+  margin-top: 20px;
 }
 
 .sales-banner__img, .banner-sunglasses__img, .banner-summer-collection__img, .banner-new-arrivals__img, .banner-men-shoes__img, .banner-super-discount__img {
