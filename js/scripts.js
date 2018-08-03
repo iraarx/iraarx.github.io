@@ -810,7 +810,18 @@ $(document).ready(function() {
                 $(this).toggleClass('dropdown-menu__submenu-list-item--active');
                 e.stopPropagation();
             });
-    } 
+    }
+    
+    /*$(window).resize(function(){
+        if($(window).width() <= 768) {
+            dpopdownFirstListItem.click(
+                function(e) {
+                    $(this).nextAll().slideToggle(300);
+                    $(this).toggleClass('active');
+                    e.stopPropagation();
+                });
+        }
+    });*/  
     
     // dropdown menu in sidebar
     $(function() {
