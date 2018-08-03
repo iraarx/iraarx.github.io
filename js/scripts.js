@@ -48,6 +48,7 @@ $(document).ready(function() {
         function(e) {
             //$(this).find(menuDropdown).fadeToggle();
             $(this).find(menuDropdown).toggleClass('visible');
+            $(this).toggleClass('header-menu__item--active');
         });
 
     //Responsive parameters of dropdown menu
