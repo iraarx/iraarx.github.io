@@ -13867,7 +13867,7 @@ a:hover {
     margin-right: 10px;
     margin-bottom: 2px;
   }
-  .dropdown-menu__submenu-list-item--active:before {
+  .dropdown-menu__submenu-list-item--active:first-child:before {
     content: '';
     content: '';
     display: block;
@@ -13877,6 +13877,10 @@ a:hover {
     -moz-transform: scale(0.9999);
     border-width: 0 5px 5px 5px;
     border-color: transparent transparent #ffb517 transparent;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+    margin-bottom: 2px;
   }
   .dropdown-menu__submenu-list-item:nth-child(n+2) {
     display: none;
@@ -14162,27 +14166,4 @@ a:hover {
 
 .hidden {
   display: none;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.block {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  background: gray;
-}
-
-.block-green {
-  background: green;
-}
-
-.show {
-  visibility: visible;
 }
