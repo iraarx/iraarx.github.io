@@ -812,16 +812,17 @@ $(document).ready(function() {
             });
     }
     
-    /*$(window).resize(function(){
-        if($(window).width() <= 768) {
+    $(window).resize(function(){
+        if(window.matchMedia('(max-width: 768px)').matches) {
             dpopdownFirstListItem.click(
                 function(e) {
+                    console.log('click submenu list resize');
                     $(this).nextAll().slideToggle(300);
-                    $(this).toggleClass('active');
+                    $(this).toggleClass('dropdown-menu__submenu-list-item--active');
                     e.stopPropagation();
                 });
         }
-    });*/  
+    });  
     
     // dropdown menu in sidebar
     $(function() {
