@@ -56,8 +56,10 @@ $(document).ready(function() {
     {
         dpopdownFirstListItem.click(
             function() {
+                console.log('click function list');
                 //$(this).find(dpopdownCollapseList).toggleClass('visible');
                 $(this).nextAll().slideToggle(1000);
+                $(this).toggleClass('dropdown-menu__submenu-list-item--active');
             });
     } 
       
@@ -67,6 +69,7 @@ $(document).ready(function() {
                 function() {
                     //$(this).find(dpopdownCollapseList).toggleClass('visible');
                     $(this).nextAll().slideToggle(1000);
+                    $(this).toggleClass('dropdown-menu__submenu-list-item--active');
                 });
         }
     });    
