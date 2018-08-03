@@ -13454,6 +13454,12 @@ a:hover {
   height: 2.2em;
 }
 
+@media (min-width: 1600px) {
+  .look-book-banner__title {
+    font-size: 84px;
+  }
+}
+
 @media (min-width: 1470px) {
   .sales-banner {
     min-height: 720px;
@@ -13857,6 +13863,7 @@ a:hover {
   }
   .dropdown-menu__submenu-list-item:nth-child(n+2) {
     display: none;
+    z-index: 30;
   }
   .main-slider__item {
     -webkit-box-orient: vertical;
@@ -14153,6 +14160,16 @@ a:hover {
 }
 
 .block {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: gray;
+}
+
+.block-green {
+  background: green;
+}
+
+.show {
+  visibility: visible;
 }
