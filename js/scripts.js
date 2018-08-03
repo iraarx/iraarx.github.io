@@ -46,6 +46,7 @@ $(document).ready(function() {
     //Creating header dropdown menu in header
     $('.header-menu__item').has(menuDropdown).click(
         function(e) {
+            console.log('Click menu');
             //$(this).find(menuDropdown).fadeToggle();
             $(this).find(menuDropdown).toggleClass('visible');
             $(this).toggleClass('header-menu__item--active');
@@ -56,7 +57,7 @@ $(document).ready(function() {
     {
         dpopdownFirstListItem.click(
             function() {
-                console.log('click function list');
+                console.log('click submenu list');
                 //$(this).find(dpopdownCollapseList).toggleClass('visible');
                 $(this).nextAll().slideToggle(1000);
                 $(this).toggleClass('dropdown-menu__submenu-list-item--active');
